@@ -14,6 +14,7 @@
   left: 0px;
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(#0c0913, #24212A);
 }
 
 .nav-bar {
@@ -47,7 +48,7 @@
 /* Login Page */
 
 #login-page {
-  background-image: linear-gradient(#40a9ff, #096dd9);
+  background-image: linear-gradient(#0c0913, #24212A);
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -63,7 +64,8 @@
   padding-bottom: 66px;
   width: 420px;
   text-align: center;
-  background-color: white;
+  color: white;
+  background-color: #3C3A42;
   border-radius: 22px;
 }
 
@@ -77,6 +79,7 @@
 
 .facebook {
   background-color: #3b5998;
+  color: white;
 }
 
 .google {

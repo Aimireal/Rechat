@@ -2,28 +2,28 @@ import React, { useContext, useState, useEffect } from 'react';
 import { useHistory  } from 'react-router-dom';
 import { auth } from '../firebase';
 
-const AuthContext = React.createContext();
+const AuthContext = React.createContext()
 
-export const useAuth = () => useContext(AuthContext);
-export const AuthProvider = ({ children }) => {
-    const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState({});
-    const history = useHistory();
+export function useAuth() { return useContext(AuthContext) }
 
-    //Handle login for the providers, and navigate to their chats
-    useEffect(() => {
-        auth.onAuthStateChanged(() => {
-            setUser(user);
-            setLoading(false);
-            history.push('/chats');
-        })
-    }, [user, history]); //Called when user or history change
+export function AuthProvider({ children }) {
+  const [loading, setLoading] = useState(true)
+  const [user, setUser] = useState()
+  const history = useHistory()
 
-    const value = { user };
+  useEffect(() => {
+    auth.onAuthStateChanged(user => {
+      setUser(user)
+      setLoading(false)
+      history.push('/chats')
+    })
+  }, [user, history])
 
-    return(
-        <AuthContext.Provider value={value}>
-            {!loading && children}
-        </AuthContext.Provider>
-    )
+  const value = { user }
+
+  return (
+    <AuthContext.Provider value={value}>
+      {!loading && children}
+    </AuthContext.Provider>
+  )
 }
