@@ -6,6 +6,12 @@
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+:root {
+  --main-color: #141214;
+  --secondary-color: #141014;
+  --accent-color: #9137d1;
+}
+
 /* Chats Page */
 
 .chats-page {
@@ -14,13 +20,13 @@
   left: 0px;
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(#0c0913, #24212A);
+  background-image: linear-gradient(var(--secondary-color), var(--main-color));
 }
 
 .nav-bar {
   width: 100%;
   height: 66px;
-  background-color: #002766;
+  background-color: var(--secondary-color) !important;
 }
 
 .logo-tab {
@@ -48,7 +54,7 @@
 /* Login Page */
 
 #login-page {
-  background-image: linear-gradient(#0c0913, #24212A);
+  background-image: linear-gradient(var(--main-color), var(--main-color));
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -65,7 +71,7 @@
   width: 420px;
   text-align: center;
   color: white;
-  background-color: #3C3A42;
+  background-color: var(--secondary-color) !important;
   border-radius: 22px;
 }
 
@@ -93,7 +99,7 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background-color: rgb(255, 255, 255, 0.22);
+  background-color: var(--secondary-color);
 }
 
 #loading-icon {
@@ -101,4 +107,170 @@
   position: relative;
   left: calc(50vw - 33px);
   top: calc(50vh - 22px);
+}
+
+/* Chat Engine */
+.ce-chat-list {
+  background-color: var(--main-color) !important;
+}
+
+.ce-chats-container {
+  background-color: var(--main-color) !important;
+}
+
+.ce-active-chat-card {
+  background-color: var(--main-color) !important;
+  border: 2px solid #cabcdc !important;
+  border-radius: 0px !important;
+}
+
+.ce-chat-subtitle-text {
+  color: #595959 !important;
+}
+
+.ce-chat-form-container {
+  padding-bottom: 20px !important;
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.ce-text-input {
+  border-radius: 6px !important;
+  border: 1px solid var(--secondary-color) !important;
+}
+
+.ce-primary-button {
+  border-radius: 6px !important;
+  background-color: var(--accent-color) !important;
+  position: relative;
+  bottom: 1px;
+}
+
+.ce-danger-button {
+  background-color: white !important;
+  border-radius: 22px !important;
+}
+
+.ce-settings {
+  background-color: var(--main-color) !important;
+}
+
+.ce-autocomplete-input {
+  border-radius: 6px !important;
+  border: 1px solid var(--secondary-color) !important;
+}
+
+.ce-autocomplete-options {
+  border-radius: 6px !important;
+  border: 1px solid var(--secondary-color) !important; 
+  background-color: var(--main-color) !important;
+}
+
+.ce-chat-settings-container {
+  padding-top: 12px !important;
+}
+
+.ce-chat-avatars-row {
+  display: none !important;
+}
+
+.ce-ice-breaker{
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.img#ce-ice-breaker-gif{
+  opacity: 0 !important;
+}
+
+.ce-feed-container{
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.ce-chat-title-text{
+  color: white;
+}
+
+.ce-text-input{
+  background-color: var(--secondary-color) !important;
+  color: white;
+}
+
+/* Custom Feed */
+.chat-feed {
+  height: 100%;
+  width: 100%;
+  overflow: scroll;
+  background-color: var(--main-color);
+}
+
+.chat-title-container {
+  width: calc(100% - 36px);
+  padding: 18px;
+  text-align: center;
+}
+
+.chat-title {
+  color: var(--secondary-color) !important;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.chat-subtitle {
+  color: var(--secondary-color) !important;
+  font-weight: 600;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.chats-page > div > div > div{
+  background-color: var(--main-color) !important;
+}
+
+img#ce-ice-breaker-gif{
+  opacity: 0 !important;
+}
+
+.ce-section-title-container{
+  color: white;
+  background-color: var(--secondary-color) !important;
+}
+
+#ce-options-drop-down{
+  color: white;
+  background-color: var(--secondary-color) !important;
+}
+
+#ce-feed-container{
+  color: white;
+  background-color: var(--main-color) !important;
+}
+
+.ce-chat-title-container{
+  color: white;
+  background-color: var(--main-color) !important;
+}
+
+.ql-editor{
+  color: white;
+  background-color: var(--main-color) !important;
+}
+
+#toolbar{
+  color: white;
+  background-color: var(--main-color) !important;
+}
+
+#ce-send-message-button{
+  background-color: var(--accent-color) !important;
+}
+
+.ce-my-message-bubble{
+  color: white;
+  background-color: var(--accent-color) !important;
+}
+
+.new-chat-plus-button{
+  background-color: var(--accent-color) !important;
 }
