@@ -73,7 +73,7 @@ export default function Chats() {
     <div className='chats-page'>
       <div className='nav-bar'>
         <div className='logo-tab'>
-          React Messenger
+          Rechat
         </div>
 
         <div onClick={handleLogout} className='logout-tab'>

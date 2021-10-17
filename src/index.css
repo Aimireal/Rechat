@@ -110,22 +110,73 @@
 }
 
 /* Chat Engine */
-.ce-chat-list {
+
+.chats-page > div > div > div,
+.ce-chat-list,
+.ce-chats-container,
+.ce-settings {
   background-color: var(--main-color) !important;
 }
 
-.ce-chats-container {
-  background-color: var(--main-color) !important;
+.new-chat-plus-button,
+.ce-chat-unread-dot,
+#ce-send-message-button{
+  background-color: var(--accent-color) !important;
 }
+
+.ce-feed-container,
+.ce-ice-breaker,
+.ce-chat-title-container,
+.ce-chat-settings-mobile-option > div > div > div,
+#ce-feed-container,
+#toolbar,
+.ql-editor{
+  background-color: var(--main-color) !important;
+  color: white;
+}
+
+.ce-text-input,
+.ce-section-title-container,
+.ce-person-container,
+.ce-autocomplete-option > div,
+.ce-chat-title,
+.ce-active-chat-card,
+#ce-add-username-input,
+#ce-delete-chat-button,
+#ce-options-drop-down{
+  background-color: var(--secondary-color) !important;
+  color: white;
+}
+
+.ce-my-message-bubble,
+#ce-connecting-popup{
+  color: white;
+  background-color: var(--accent-color) !important;
+}
+
+.ce-chat-settings-mobile-option > div > div > div > div,
+.ce-chat-title-text,
+.ce-message-date-text{
+  color: white;
+}
+
+.ce-chat-settings-mobile-option svg,
+.ce-chat-list-mobile-option svg {
+  color: white; outline: none;
+}
+
+.ce-message-date-text,
+.ce-chat-subtitle-text,
+.ce-their-message-sender{
+  color: grey !important;
+}
+
+.ce-chat-settings-mobile-option > 
 
 .ce-active-chat-card {
   background-color: var(--main-color) !important;
   border: 2px solid #cabcdc !important;
   border-radius: 0px !important;
-}
-
-.ce-chat-subtitle-text {
-  color: #595959 !important;
 }
 
 .ce-chat-form-container {
@@ -151,10 +202,6 @@
   border-radius: 22px !important;
 }
 
-.ce-settings {
-  background-color: var(--main-color) !important;
-}
-
 .ce-autocomplete-input {
   border-radius: 6px !important;
   border: 1px solid var(--secondary-color) !important;
@@ -174,30 +221,10 @@
   display: none !important;
 }
 
-.ce-ice-breaker{
-  background-color: var(--main-color) !important;
-  color: white;
-}
-
-.img#ce-ice-breaker-gif{
+img#ce-ice-breaker-gif{
   opacity: 0 !important;
 }
 
-.ce-feed-container{
-  background-color: var(--main-color) !important;
-  color: white;
-}
-
-.ce-chat-title-text{
-  color: white;
-}
-
-.ce-text-input{
-  background-color: var(--secondary-color) !important;
-  color: white;
-}
-
-/* Custom Feed */
 .chat-feed {
   height: 100%;
   width: 100%;
@@ -224,53 +251,18 @@
   padding-top: 4px;
 }
 
-.chats-page > div > div > div{
-  background-color: var(--main-color) !important;
+.read-receipts {
+  position: relative;
+  bottom: 6px;
 }
 
-img#ce-ice-breaker-gif{
-  opacity: 0 !important;
-}
-
-.ce-section-title-container{
+.read-receipt {
+  width: 13px;
+  height: 13px;
+  border-radius: 13px;
+  margin: 1.5px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
   color: white;
-  background-color: var(--secondary-color) !important;
-}
-
-#ce-options-drop-down{
-  color: white;
-  background-color: var(--secondary-color) !important;
-}
-
-#ce-feed-container{
-  color: white;
-  background-color: var(--main-color) !important;
-}
-
-.ce-chat-title-container{
-  color: white;
-  background-color: var(--main-color) !important;
-}
-
-.ql-editor{
-  color: white;
-  background-color: var(--main-color) !important;
-}
-
-#toolbar{
-  color: white;
-  background-color: var(--main-color) !important;
-}
-
-#ce-send-message-button{
-  background-color: var(--accent-color) !important;
-}
-
-.ce-my-message-bubble{
-  color: white;
-  background-color: var(--accent-color) !important;
-}
-
-.new-chat-plus-button{
-  background-color: var(--accent-color) !important;
 }
